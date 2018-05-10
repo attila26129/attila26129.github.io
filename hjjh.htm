@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<title>No title</title>
+<meta name="generator" content="Namo WebEditor(Trial)">
+<script language="JavaScript">
+<!--
+function namosw_goto_byselect(sel, targetstr)
+{
+  var index = sel.selectedIndex;
+  if (sel.options[index].value != '') {
+     if (targetstr == 'blank') {
+       window.open(sel.options[index].value, 'win1');
+     } else {
+       var frameobj;
+       if (targetstr == '') targetstr = 'self';
+       if ((frameobj = eval(targetstr)) != null)
+         frameobj.location = sel.options[index].value;
+     }
+  }
+}
+
+// -->
+</script></head>
+
+<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red" background="nbnb.png">
+<form name="form1">
+<p><select name="formselect1" size="1" OnChange="namosw_goto_byselect(this, 'self')">
+    <option selected value="http://">S&eacute;rie</option>
+    <option value="../1s.htm">1.s&eacute;ria</option>
+</select></p>
+</form>
+<p>&nbsp;</p>
+</body>
+
+</html>
